@@ -1,0 +1,8 @@
+- install lumen-generator
+    https://github.com/flipboxstudio/lumen-generator
+        Configuration
+Inside your bootstrap/app.php file, add:
+
+$app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
+
+-php artisan key:generate
