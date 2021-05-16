@@ -6,3 +6,8 @@ Inside your bootstrap/app.php file, add:
 $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 
 -php artisan key:generate
+
+- membuat Model Kategori,KategoriController, KategoriFactory,SeederKategory
+    php artisan make:model Kategori -mcfs -r
+
+
