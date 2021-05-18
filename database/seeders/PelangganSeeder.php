@@ -17,11 +17,13 @@ class PelangganSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        $data = [
-            'pelanggan' => $faker->name,
-            'alamat' => $faker->address,
-            'telp' => $faker->phoneNumber,
-        ];
-        Pelanggan::create($data);
+        for ($i = 0; $i < 100; $i++) {
+            $data = [
+                'pelanggan' => $faker->name,
+                'alamat' => $faker->address,
+                'telp' => $faker->phoneNumber,
+            ];
+            Pelanggan::create($data);
+        }
     }
 }
