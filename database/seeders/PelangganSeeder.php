@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Pelanggan;
 use Illuminate\Database\Seeder;
+use Faker\Factory as Faker;
 
 class PelangganSeeder extends Seeder
 {
@@ -14,10 +15,12 @@ class PelangganSeeder extends Seeder
      */
     public function run()
     {
+        $faker = Faker::create();
+
         $data = [
-            'pelanggan' => 'Budi',
-            'alamat' => 'Jl. Satria IV no.134',
-            'telp' => '08961805111',
+            'pelanggan' => $faker->name,
+            'alamat' => $faker->address,
+            'telp' => $faker->phoneNumber,
         ];
         Pelanggan::create($data);
     }
