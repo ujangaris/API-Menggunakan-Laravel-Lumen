@@ -23,4 +23,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->post('kategori', ['uses'=>'KategoriController@store']);
     $router->delete('kategori/{id}', ['uses'=>'KategoriController@destroy']);
     $router->put('kategori/{id}', ['uses'=>'KategoriController@update']);
+
+    $router->get('pelanggan', ['uses' => 'PelangganController@index']);
+    $router->get('pelanggan/{id}', ['uses' => 'PelangganController@show']);
 });

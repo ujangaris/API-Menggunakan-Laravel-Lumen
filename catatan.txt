@@ -16,5 +16,20 @@ $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 - Seeding data ke database
     php artisan db:seed
 
+$ php artisan route:list
++--------+---------------------+------------+------------------------------------------+---------+------------+
+| Verb   | Path                | NamedRoute | Controller                               | Action  | Middleware |
++--------+---------------------+------------+------------------------------------------+---------+------------+
+| GET    | /                   |            | None                                     | Closure |            |
+| GET    | /api/kategori       |            | App\Http\Controllers\KategoriController  | index   |            |
+| GET    | /api/kategori/{id}  |            | App\Http\Controllers\KategoriController  | show    |            |
+| POST   | /api/kategori       |            | App\Http\Controllers\KategoriController  | store   |            |
+| DELETE | /api/kategori/{id}  |            | App\Http\Controllers\KategoriController  | destroy |            |
+| PUT    | /api/kategori/{id}  |            | App\Http\Controllers\KategoriController  | update  |            |
+| GET    | /api/pelanggan      |            | App\Http\Controllers\PelangganController | index   |            |
+| GET    | /api/pelanggan/{id} |            | App\Http\Controllers\PelangganController | show    |            |
++--------+---------------------+------------+------------------------------------------+---------+------------+
+
+
 
 
