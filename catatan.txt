@@ -13,6 +13,8 @@ $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 - Membuat Model Pelanggan
     php artisan make:model Pelanggan -mcfs -r
 
+- Seeding data ke database
+    php artisan db:seed
 
 
 
