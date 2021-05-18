@@ -10,4 +10,9 @@ $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 - membuat Model Kategori,KategoriController, KategoriFactory,SeederKategory
     php artisan make:model Kategori -mcfs -r
 
+- Membuat Model Pelanggan
+    php artisan make:model Pelanggan -mcfs -r
+
+
+
 
