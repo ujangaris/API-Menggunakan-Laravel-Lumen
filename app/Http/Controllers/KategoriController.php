@@ -14,7 +14,8 @@ class KategoriController extends Controller
      */
     public function index()
     {
-        //
+        // return "ini adalah Kategori index";
+         return response()->json('ini adalah index');
     }
 
     /**
@@ -35,7 +36,7 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return response()->json($request);
     }
 
     /**
@@ -46,7 +47,7 @@ class KategoriController extends Controller
      */
     public function show(Kategori $kategori)
     {
-        //
+        return response()->json('Menampilkan satu data');
     }
 
     /**
@@ -69,7 +70,7 @@ class KategoriController extends Controller
      */
     public function update(Request $request, Kategori $kategori)
     {
-        //
+        return response()->json("data berhasil di update");
     }
 
     /**
@@ -80,6 +81,6 @@ class KategoriController extends Controller
      */
     public function destroy(Kategori $kategori)
     {
-        //
+        return response()->json("ini delete  $kategori");
     }
 }
