@@ -48,5 +48,7 @@ $ php artisan route:list
 | PUT    | /api/pelanggan/{id} |            | App\Http\Controllers\PelangganController | update  |            |
 +--------+---------------------+------------+------------------------------------------+---------+------------+
 
+- membuat database menu
+    php artisan make:model Menu -cm -r
 
 
