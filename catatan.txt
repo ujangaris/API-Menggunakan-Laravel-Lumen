@@ -30,7 +30,23 @@ $ php artisan route:list
 | GET    | /api/pelanggan/{id} |            | App\Http\Controllers\PelangganController | show    |            |
 +--------+---------------------+------------+------------------------------------------+---------+------------+
 
-untuk update data pada postment menggunakan : x-www-urlencoded
+- untuk update data pada postment menggunakan : x-www-urlencoded
+    php artisan route:list
++--------+---------------------+------------+------------------------------------------+---------+------------+
+| Verb   | Path                | NamedRoute | Controller                               | Action  | Middleware |
++--------+---------------------+------------+------------------------------------------+---------+------------+
+| GET    | /                   |            | None                                     | Closure |            |
+| GET    | /api/kategori       |            | App\Http\Controllers\KategoriController  | index   |            |
+| GET    | /api/kategori/{id}  |            | App\Http\Controllers\KategoriController  | show    |            |
+| POST   | /api/kategori       |            | App\Http\Controllers\KategoriController  | store   |            |
+| DELETE | /api/kategori/{id}  |            | App\Http\Controllers\KategoriController  | destroy |            |
+| PUT    | /api/kategori/{id}  |            | App\Http\Controllers\KategoriController  | update  |            |
+| GET    | /api/pelanggan      |            | App\Http\Controllers\PelangganController | index   |            |
+| GET    | /api/pelanggan/{id} |            | App\Http\Controllers\PelangganController | show    |            |
+| POST   | /api/pelanggan      |            | App\Http\Controllers\PelangganController | store   |            |
+| DELETE | /api/pelanggan/{id} |            | App\Http\Controllers\PelangganController | destroy |            |
+| PUT    | /api/pelanggan/{id} |            | App\Http\Controllers\PelangganController | update  |            |
++--------+---------------------+------------+------------------------------------------+---------+------------+
 
 
 
