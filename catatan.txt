@@ -30,6 +30,7 @@ $ php artisan route:list
 | GET    | /api/pelanggan/{id} |            | App\Http\Controllers\PelangganController | show    |            |
 +--------+---------------------+------------+------------------------------------------+---------+------------+
 
+untuk update data pada postment menggunakan : x-www-urlencoded
 
 
 
