@@ -26,4 +26,5 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
     $router->get('pelanggan', ['uses' => 'PelangganController@index']);
     $router->get('pelanggan/{id}', ['uses' => 'PelangganController@show']);
+    $router->post('pelanggan', ['uses' => 'PelangganController@store']);
 });

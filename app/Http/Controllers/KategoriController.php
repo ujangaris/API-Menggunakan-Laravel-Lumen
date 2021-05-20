@@ -37,7 +37,8 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-        return response()->json($request);
+        Kategori::create($request->all());
+        return response()->json("data berhasil ditambahkan!");
     }
 
     /**
