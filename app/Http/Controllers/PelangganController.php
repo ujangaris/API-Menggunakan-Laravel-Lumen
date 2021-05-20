@@ -36,8 +36,13 @@ class PelangganController extends Controller
      */
     public function store(Request $request)
     {
-        Pelanggan::create($request->all());
-        return response()->json("data berhasil ditambahkan!");
+        $this->validate($request,[
+            'pelanggan' => 'required|unique:pelanggans',
+            'alamat' => 'required',
+            'telp' => 'required|numeric'
+        ]);
+        $pelanggan = Pelanggan::create($request->all());
+        return response()->json($pelanggan);
     }
 
     /**
